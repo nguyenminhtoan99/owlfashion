@@ -1,0 +1,16 @@
+<?php
+
+namespace App\models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Brand extends Model
+{
+    protected $table = 'brands';
+
+    protected $fillable = [
+        'name', 'status', 'sort','slug'
+    ];
+
+    public $timestamps = true;
+}
